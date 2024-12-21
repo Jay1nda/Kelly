@@ -1421,3 +1421,55 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+/* Styling the hobbies section */
+.hobbies-section {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling the list items */
+.hobbies-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.hobbies-list ul li {
+  margin-bottom: 15px; /* Adds spacing between list items */
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+/* Individual colours for each list item */
+.hobbies-list ul li:nth-child(1) {
+  background-color: #ffebee; /* Light red */
+  color: #b71c1c;
+}
+
+.hobbies-list ul li:nth-child(2) {
+  background-color: #e8f5e9; /* Light green */
+  color: #1b5e20;
+}
+
+.hobbies-list ul li:nth-child(3) {
+  background-color: #e3f2fd; /* Light blue */
+  color: #0d47a1;
+}
+
+.hobbies-list ul li:nth-child(4) {
+  background-color: #fbe9e7; /* Light orange */
+  color: #bf360c;
+}
+
+/* Icon styling */
+.hobbies-list ul li i {
+  margin-right: 10px;
+  font-size: 20px;
+  color: #555;
+}
