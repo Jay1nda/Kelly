@@ -1428,22 +1428,37 @@ section,
   background-color: #f9f9f9;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  width: 80%; /* Makes the section centrally aligned */
+  text-align: center;
 }
 
-/* Styling the list items */
+/* Removing Bootstrap column restrictions */
+.hobbies-list {
+  width: 100%; /* Ensures the list spans the entire section */
+  margin: 0 auto;
+}
+
+/* Styling the list */
 .hobbies-list ul {
   list-style: none;
   padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Stacks items vertically */
+  align-items: stretch; /* Ensures items take full width */
+  gap: 20px; /* Adds space between list items */
 }
 
 .hobbies-list ul li {
-  margin-bottom: 15px; /* Adds spacing between list items */
-  font-size: 16px;
-  line-height: 1.6;
-  padding: 10px;
-  border-radius: 5px;
-  display: flex;
+  display: flex; /* Flexbox for alignment */
   align-items: center;
+  justify-content: space-between; /* Distributes items across the row */
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  width: 100%; /* Ensures items take up full width */
 }
 
 /* Individual colours for each list item */
@@ -1467,9 +1482,35 @@ section,
   color: #bf360c;
 }
 
-/* Icon styling */
-.hobbies-list ul li i {
-  margin-right: 10px;
-  font-size: 20px;
-  color: #555;
+/* Heading text (Music, Football, etc.) styling */
+.hobbies-list ul li strong {
+  font-size: 24px; /* Makes the heading text much bigger */
+  font-weight: bolder;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 5px; /* Space between heading and explanation */
+}
+
+/* Explanation text styling */
+.hobbies-list ul li span {
+  font-size: 18px;
+  font-weight: normal;
+  color: #333; /* Dark grey for readability */
+}
+
+/* Image styling */
+.hobby-image {
+  width: 60px; /* Sets the size of the image */
+  height: 60px;
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image fits within the dimensions */
+  border: 2px solid #ccc; /* Adds a border around the image */
+  flex-shrink: 0; /* Prevents the image from shrinking */
+}
+
+/* Adjusting the image and text container alignment */
+.hobbies-list ul li div {
+  flex-grow: 1; /* Ensures text takes remaining space */
+  text-align: left; /* Aligns text to the left */
+  margin-left: 20px; /* Adds spacing between image and text */
 }
